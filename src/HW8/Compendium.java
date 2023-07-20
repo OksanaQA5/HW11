@@ -8,7 +8,6 @@ public class Compendium {
     private String Цвет_обложки;
     private String Название_заведения;
 
-    // Конструктор класса
     public Compendium(String ФИО_студента, String Название_предмета, int Количество_страниц, int Год_выпуска, String Цвет_обложки, String Название_заведения) {
         this.ФИО_студента = ФИО_студента;
         this.Название_предмета = Название_предмета;
@@ -18,7 +17,6 @@ public class Compendium {
         this.Название_заведения = Название_заведения;
     }
 
-    // Методы для доступа к полям класса (геттеры и сеттеры)
     public String getФИО_студента() {
         return ФИО_студента;
     }
@@ -68,7 +66,6 @@ public class Compendium {
     }
 
     public static void main(String[] args) {
-        // Пример использования класса
         Compendium compendium = new Compendium("Цимбал Микола Сергійович", "Програмувавння та автоматизація", 50, 2023, "Синий", "Черкаський Політехнічний Університет");
         System.out.println("ФИО студента: " + compendium.getФИО_студента());
         System.out.println("Название предмета: " + compendium.getНазвание_предмета());
