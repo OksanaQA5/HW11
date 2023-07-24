@@ -70,4 +70,12 @@ class Computer {
     public int hashCode() {
         return Objects.hash(brand, ram, graphicsCard);
     }
+
+    public static class Main {
+              public static void main(String[] args) {
+                  Computer computer = new Computer("Lenovo", 1000, 16, 4);
+
+                  System.out.println(computer);
+            }
+        }
 }
